@@ -72,7 +72,9 @@ public class ArticleListActivity extends AppCompatActivity implements
             getSupportActionBar().setTitle("");
         }
 
-
+        if (savedInstanceState == null) {
+            refresh();
+        }
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
@@ -95,6 +97,7 @@ public class ArticleListActivity extends AppCompatActivity implements
             snackbar.setActionTextColor(Color.RED);
             snackbar.show();
         }
+
     }
 
     private void refresh() {
