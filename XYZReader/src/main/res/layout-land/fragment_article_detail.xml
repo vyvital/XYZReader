@@ -82,7 +82,13 @@
                     android:fontFamily="sans-serif"
                     android:textSize="@dimen/detail_body_text_size"
                      />
-
+                <TextView
+                    android:id="@+id/more_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:text="@string/read_more"/>
             </com.example.xyzreader.ui.MaxWidthLinearLayout>
         </LinearLayout>
     </com.example.xyzreader.ui.ObservableScrollView>

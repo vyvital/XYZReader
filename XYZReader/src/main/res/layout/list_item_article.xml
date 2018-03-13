@@ -11,8 +11,9 @@
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:layout_margin="5dp"
-        android:elevation="10dp"
+        app:cardElevation="2dp"
         app:cardCornerRadius="8dp"
+        app:cardMaxElevation="8dp"
         >
 
         <com.example.xyzreader.ui.DynamicHeightNetworkImageView
